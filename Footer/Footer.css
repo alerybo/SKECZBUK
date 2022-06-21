@@ -1,0 +1,39 @@
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+.footer-container {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    color: #a1593d;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-container p {
+    color: #c59683;
+    font-size: 0.7rem;
+}
+
+.footer-container ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.footer-link {
+    text-decoration: none;
+    padding: 1rem;
+    color: #a1593d;
+    font-size: 2rem
+}
+
+.footer-link:hover {
+    color: #d9bbaf;
+    transition: all 0.3s ease-in-out;
+}
+

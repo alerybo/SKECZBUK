@@ -1,0 +1,76 @@
+
+/* HOME SECTION */
+section {
+    position: relative;
+    width: 100%;
+	height: 100vh;
+    overflow: hidden;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.3s ease;
+}
+
+section img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	pointer-events: none;
+	will-change: transform;
+}
+
+#clouds_left,
+#clouds_right {
+	z-index: -2;
+}
+
+#front {
+    z-index: 3;
+}
+
+#sun {
+	z-index: -3;
+}
+
+section:before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 15vh;
+	background: #ecebd9;
+	z-index: 5;
+}
+
+#river__container {
+	top: 57%;
+	height: 50vh;
+	position: relative;
+	z-index: 100;
+	overflow: visible;
+	
+}
+
+#river {
+	top: 0;
+	height: 100%;
+	stroke: rgb(161,89,61);
+	stroke-width: 7;
+}
+
+.portfolio-title {
+    font-size: 1rem;
+    position: absolute;
+    bottom: 0;
+    z-index: 500;
+	transition: 1s;
+}
+
+#portfolio-title-text {
+    text-align: center;
+    color: #a1593d;
+	position: relative;
+}
