@@ -1,102 +1,101 @@
 .shop {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-	margin-bottom: 100px;
+  position: relative;
+  margin: 2rem;
+  padding-top: 80px;
 }
 
 .shop-title {
-	padding: 100px 0 50px 0;
-    font-size: 1rem;
+  position: relative;
+  padding: 2rem;
 }
 
 #shop-title-text {
-    margin: auto;
-    text-align: center;
-    color: #a1593d;
+  margin: auto;
+  text-align: center;
+  color: #a1593d;
+  font-size: 2rem;
 }
 
 .shop-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .shop-card {
-    margin: 2rem;
-    height: 500px;
-    width: 400px;
-    border-radius: 4px;
-    background-image: linear-gradient(
-		to bottom,
-		rgba(0, 0, 0, 0) 0%,
-		rgba(209, 188, 188, 0.9) 100%
-	), url('/img/art/blob.jpg');
-    background-size: cover;
-	color: #fff;
-	position: relative;
+  margin: 2rem;
+  height: 500px;
+  width: 400px;
+  border-radius: 4px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      #cdccbe 100%
+    ),
+    url("/img/art/blob.jpg");
+  background-size: cover;
+  color: #fff;
+  position: relative;
 }
 
 .shop-card:nth-child(2) {
-	background-image: linear-gradient(
-		to bottom,
-		rgba(0, 0, 0, 0) 0%,
-		rgba(209, 188, 188, 0.9) 100%
-	), url('/img/art/yinyang.jpg');
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(40, 35, 35, 0.9) 100%
+    ),
+    url("/img/art/yinyang.jpg");
 }
 
 .shop-card h2 {
-	position: absolute;
-	top:  380px;
-	left: 30px;
-    color: rgb(61, 52, 61);
+  position: absolute;
+  top: 380px;
+  left: 30px;
+  font-size: 2rem;
+  color: rgb(46, 39, 46);
+}
+
+.shop-card:nth-child(2) h2 {
+  color: rgb(211, 196, 181);
 }
 
 .shop-card button {
-	color: #fff;
-	padding: 10px 20px;
-	border: none;
-	outline: none;
-	border-radius: 4px;
-	background: #a1593d;
-	position: absolute;
-	top: 430px;
-	left: 30px;
-	font-size: 1rem;
-	cursor: pointer;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #a1593d;
+  position: absolute;
+  top: 430px;
+  left: 30px;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 .shop-card button:hover {
-    background-color: #d9bbaf;
+  background-color: #d9bbaf;
 }
 
 .shop-card:hover {
-	transform: scale(1.075);
-	transition: 0.3s ease-in-out;
-	cursor: pointer;
+  transform: scale(1.075);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 960px) {
-	.shop {
-		height: 1600px;
-	}
+  .shop-card h2 {
+    font-size: 2rem;
 
-	.shop h1 {
-		font-size: 2rem;
-		margin-top: 12rem;
-	}
+  }
 }
 
 @media screen and (max-width: 480px) {
-	.shop {
-		height: 1400px;
-	}
+  .shop-card h2 {
+    font-size: 1.2rem;
+  }
 
-	.shop h1 {
-		font-size: 1.2rem;
-	}
-
-	.shop-card {
-		width: 300px;
-	}
+  .shop-card {
+    width: 300px;
+  }
 }

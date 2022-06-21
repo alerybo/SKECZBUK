@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>SKECZBUK</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" type="text/css" href="./Navbar/navbar.css" />
     <link rel="stylesheet" type="text/css" href="./Home/home.css" />
@@ -17,6 +18,11 @@
       <div class="navbar-container">
         <a href="/" class="logo">SKECZBUK</a>
         <div class="line"><hr /></div>
+        <div class="navbar-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
         <ul class="navbar-menu">
           <li class="navbar-item">
             <a href="#home" class="navbar-link">HOME</a>
@@ -34,14 +40,14 @@
       </div>
     </nav>
 
-    <section class="home" id="home">
+    <div class="home" id="home">
       <img src="img/Front.png" id="front" />
       <img src="img/Mountains.png" id="mountains" />
       <img src="img/Sun.png" id="sun" />
       <img src="img/clouds_left.png" id="clouds_left" />
       <img src="img/clouds_right.png" id="clouds_right" />
-      
-      <div id="river__container">
+    </div>  
+      <!-- <div id="river__container">
         <svg
           id="river"
           viewBox="0 0 500 500"
@@ -69,13 +75,15 @@
             />
           </g>
         </svg>
-      </div>
+      </div> -->
+
+    
+
+    <div class="portfolio" id="portfolio">
+      <div class="line"><hr /></div>
       <div class="portfolio-title">
         <h2 id="portfolio-title-text">PORTFOLIO</h2>
       </div>
-    </section>
-
-    <div class="portfolio" id="portfolio">
       <div class="portfolio-row">
         <div class="portfolio-column">
           <img class="portfolio-img" src="img/art/card-heart.jpg" alt="">
@@ -112,20 +120,22 @@
     </div>   
 
     <div class="about" id="about">
+
       <div class="line"><hr /></div>
       <div class="about-title">
         <h2 id="about-title-text">ABOUT ME</h2>
       </div>
              
       <div class="about-container">
-            
-        <img src="./img/about/me.JPG" alt="img-me">
-        <div class="about-text">
+        <div class="about-container__half">
+          <img src="./img/about/me.JPG" alt="img-me">
+        </div>
+        <div class="about-container__half">
           <p>Hi there! I am a self taught illustrator and an aspiring frontend developer based in Warsaw, Poland.</p>
           <p>My work revolves around both traditional and digital illustrations mixed with experimental animation.
                 I'm also a mechatronics engineer with 3 years of professional experience in movie post-production.</p>
           <br />  
-          <div class="about-email">Contact me: olarybolowicz@gmail.com</div>
+          <div class="about-email"><p>Contact me: olarybolowicz@gmail.com</p></div>
           <ul class="about-links">
             <li>
               <a class="about-link" href="https://www.instagram.com/skeczbuk/" target="_blank" ><i class="fa-brands fa-instagram"></i></a>
@@ -137,7 +147,7 @@
               <a class="about-link" href="https://pl.linkedin.com/in/aleksandra-rybolowicz" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             </li>
           </ul>
-        </div>
+        </div>          
       </div>
     </div>
 
