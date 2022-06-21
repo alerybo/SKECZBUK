@@ -24,8 +24,8 @@
 
 .shop-card {
   margin: 2rem;
-  height: 500px;
-  width: 400px;
+  height: 400px;
+  width: 300px;
   border-radius: 4px;
   background-image: linear-gradient(
       to bottom,
@@ -35,7 +35,10 @@
     url("/img/art/blob.jpg");
   background-size: cover;
   color: #fff;
-  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 .shop-card:nth-child(2) {
@@ -48,11 +51,9 @@
 }
 
 .shop-card h2 {
-  position: absolute;
-  top: 380px;
-  left: 30px;
   font-size: 2rem;
   color: rgb(46, 39, 46);
+  margin: 1rem;
 }
 
 .shop-card:nth-child(2) h2 {
@@ -66,11 +67,9 @@
   outline: none;
   border-radius: 4px;
   background: #a1593d;
-  position: absolute;
-  top: 430px;
-  left: 30px;
   font-size: 1rem;
   cursor: pointer;
+  margin: 1rem;
 }
 
 .shop-card button:hover {
@@ -86,7 +85,6 @@
 @media screen and (max-width: 960px) {
   .shop-card h2 {
     font-size: 2rem;
-
   }
 }
 
@@ -96,6 +94,7 @@
   }
 
   .shop-card {
-    width: 300px;
+    width: 200px;
+    margin: 1rem;
   }
 }
