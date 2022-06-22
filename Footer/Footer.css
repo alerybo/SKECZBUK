@@ -1,11 +1,9 @@
 .footer {
   position: relative;
   bottom: 0;
-  width: 90%;
-  box-sizing: border-box;
+  width: 100%;
 }
 .footer-container {
-  width: 100%;
   padding: 1rem 1.5rem;
   color: #a1593d;
   display: flex;
