@@ -37,6 +37,11 @@
   opacity: 0.5;
 }
 
+.portfolio-video {
+  text-align: center;
+  margin-top: 8rem;
+}
+
 @media screen and (max-width: 800px) {
   .portfolio-column {
     flex: 50%;
@@ -48,6 +53,9 @@
   .portfolio-column {
     flex: 100%;
     max-width: 100%;
+  }
+  iframe {
+    width: 90vw
   }
 }
 
